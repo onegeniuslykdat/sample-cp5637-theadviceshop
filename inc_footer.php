@@ -1,12 +1,15 @@
-<footer><p class="copyright">&copy; 2016, The Advice Shop.</p>
+<footer><p class="copyright">&copy;
+    <?php echo date('Y')?>, The Advice Shop.
+</p>
     <p class="user"><?php
+    include('functions.php');
 // echo $_SESSION['blah']; // demo undefined variable
 if (isset($_SESSION['username'])) {
-    echo "Hello " . $_SESSION['username'];
+    echo "Hello " . getFullName($_SESSION['fname'], $_SESSION['lname']);
     echo " - <a href=\"logout.php?page=$name\">Logout</a>";
 }
 else {
-    echo "(Not logged in)";
+    echo "Welcome, Guest";
 }
 ?></p>
 </footer>
