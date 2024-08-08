@@ -1,0 +1,5 @@
+@mixin btn($bckg_col, $rounded_radius) {
+    background-color: $bckg_col;
+    border-color: darken($bckg_col, 50%);
+    border-radius: $rounded_radius;
+}

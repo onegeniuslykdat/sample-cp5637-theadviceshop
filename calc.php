@@ -1,5 +1,5 @@
 <?php include("dbconnect.php");
-include("functions.php") ?>
+include_once("functions.php") ?>
 <!doctype html>
 <html>
 

@@ -1,0 +1,6 @@
+$nav_background: rgb(220, 197, 189);
+$header_background: darken($nav_background, 80%);
+$light_font: #FFF;
+$features_background: adjust-hue($light_font, 15deg);
+$nav_li_current_background-color: orange;
+$ul_li_hover_background: lightblue;
